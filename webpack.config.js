@@ -1,9 +1,13 @@
 module.exports = {
+  entry: {
+    index: './src/index.js'
+  },
+  output:{
+    filename: '[name].js',
+    path: __dirname + '/dist'
+  },
+  devtool: 'source-map',
   module: {
-    entry: './src/index.js',
-    output:{
-      filename: 'bundle.js'
-    },
     resolve: {
       extensions: ['', '.js', '.jsx']
     },
